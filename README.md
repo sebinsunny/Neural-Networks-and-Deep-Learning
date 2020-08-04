@@ -2,6 +2,7 @@
 
 [What is a neural network](#h)  
 [Supervised learning with Neural Network](#s)
+[## Why is Deep Learning taking off?](#d)
 
 <a name="h"/>
 
@@ -32,6 +33,15 @@ For sequential data we used Recurrent neural network (RNN) and for image applica
 ![](https://i.imgur.com/F9u95J0.png)
 
 Neural network works well with interpreting the unstructured data, create applications that use speech recognition, image recognition.
+
+<a name="d"/>
+
+## Why is Deep Learning taking off?
+
+Scale drives of deep learning process is the large amount labelled samples, performance depends on Data, Computation, Algorithms.  
+
+Algorithms
+Breakthrough is switching from Sigmoid function to ReLU function. drawbacks of sigmoid function are the slope of the function would gradient is nearly zero, so that the learning is slow because when you implement gradient descent and gradient is zero the parameters just change very slowly. For Relu the gradient is equal to one for all positive values of input right and less likely gradient shrink to zero.
 
 
 
