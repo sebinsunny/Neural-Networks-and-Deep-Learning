@@ -1,8 +1,8 @@
 # Table of Contents
 
 [What is a neural network](#h)  
-[Supervised learning with Neural Network](#s)
-[Why is Deep Learning taking off?](#d)
+[Supervised learning with Neural Network](#s)  
+[Why is Deep Learning taking off](#d)
 
 <a name="h"/>
 
