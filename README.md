@@ -1,8 +1,9 @@
 # Table of Contents
 
 [What is a neural network](#h)  
-[Supervised learning with Neural Network](#s)  
-[Why is Deep Learning taking off](#d)
+[Supervised learning with Neural Network](#s)   
+[Why is Deep Learning taking off?](#d)   
+[Logistic regression on Deep learning](#l)
 
 <a name="h"/>
 
@@ -26,7 +27,7 @@ In supervised learning you have some input x and you want to learn a function ma
 
 Application of neural network.
 
-![](https://imgur.com/J4gVzWO.png)
+![](https://imgur.com/J4gVzWO)
 
 For sequential data we used Recurrent neural network (RNN) and for image application we used convolutional neutral network
 
@@ -40,8 +41,21 @@ Neural network works well with interpreting the unstructured data, create applic
 
 Scale drives of deep learning process is the large amount labelled samples, performance depends on Data, Computation, Algorithms.  
 
-### Algorithms
+Algorithms
 Breakthrough is switching from Sigmoid function to ReLU function. drawbacks of sigmoid function are the slope of the function would gradient is nearly zero, so that the learning is slow because when you implement gradient descent and gradient is zero the parameters just change very slowly. For Relu the gradient is equal to one for all positive values of input right and less likely gradient shrink to zero.
+
+<a name="l"/>
+
+## Logistic regression for Deep learning
+
+Logistic regression is for binary classification, consider we have an image and we want to recognize this image as either being a cat, in case cat then we denote the output as 1 and not cat output as 0. 
+
+![](https://imgur.com/dnGMuCT.png)
+
+The computer store images in the computer as three separate matrices corresponding to red green and blue colors channels. So if your image is 64 pixel by 64 pixels then you have 3 64 by 64 matrixes corresponding to the red green and blue. We convert these pixel intensity values into feature vector x, so single vector represent all the pixel intensity values, the total dimension of the vector x will be 64 by 64 multiplied by 3, in this case its turn out to be 12,228
+
+
+
 
 
 
