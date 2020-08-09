@@ -95,9 +95,14 @@ We want to find w, b that minimize J(w,b)
 We step in, on each iteration find the parameters to minimise the cost function.
  
 
-dw will be used to represent this derivative term. w get updated and represented as <img src="https://i.upmath.me/svg/%3A%3D%20w%20-%5Calpha%20%5C%20%7B%5CpartialT(w%2Cb)%20%5Cover%20%5Cpartial(w)%7D" alt=":= w -\alpha \ {\partialT(w,b) \over \partial(w)}" />. definition of a derivative is the slope of a function at the point. So the slope of the function is really the height divided by the width. so in logistic regression we updating w as w minus the learning rate times the derivative of J(w,b) respect to w
+dw will be used to represent this derivative term. w get updated and represented as 
+<img src="https://i.upmath.me/svg/w%3A%3D%20w%20-%5Calpha%20%5C%20%7B%20%5Cpartial%20T(w%2Cb)%20%5Cover%20%5Cpartial(w)%7D" alt="w:= w -\alpha \ { \partial T(w,b) \over \partial(w)}" /> 
+
+The definition of a derivative is the slope of a function at the point. So the slope of the function is really the height divided by the width. 
+
+<img src="https://i.upmath.me/svg/b%3A%3D%20w%20-%5Calpha%20%5C%20%7B%20%5Cpartial%20T(w%2Cb)%20%5Cover%20%5Cpartial(b)%7D" alt="b:= w -\alpha \ { \partial T(w,b) \over \partial(b)}" />
+
+
+So in logistic regression we updating w as w minus the learning rate times the derivative of J(w,b) respect to w
 you update b as b minus the learning rate times the derivative of the cost function in respect to b
-
-<img src="https://i.upmath.me/svg/%3A%3D%20b%20-%5Calpha%20%5C%20%7B%5CpartialT(w%2Cb)%20%5Cover%20%5Cpartial(b)%7D" alt=":= b -\alpha \ {\partialT(w,b) \over \partial(b)}" />
-
 
