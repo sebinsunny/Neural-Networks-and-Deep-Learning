@@ -107,3 +107,18 @@ The definition of a derivative is the slope of a function at the point. So the
 So in logistic regression we updating w as w minus the learning rate times the derivative of J(w,b) respect to w
 you update b as b minus the learning rate times the derivative of the cost function in respect to b
 
+### Derivatives
+![](https://imgur.com/slq44w9.png)
+
+slope is defined as the height divided by the width little triangle.
+
+Derivatives are defined with an even smaller value of how much you nudge a to the right. So, it's not 0.001. It's not 0.000001. It's not 0.00000000 and so on 1. It's even smaller than that, and the formal definition of derivative says, whenever you nudge a to the right by an infinitesimal amount, basically an infinitely tiny, tiny amount
+
+#### back propagation
+
+![](https://imgur.com/41NelOW.png)
+ Well, let's go through the example, where now a = 5. So let's bump it up to 5.001. The net impact of that is that v, which was a + u, so that was previously 11. This would get increased to 11.001. And then we've already seen as above that J now gets bumped up to 33.003. So what we're seeing is that if you increase a by 0.001, J increases by 0.003. And by increase a, I mean, you have to take this value of 5 and just plug in a new value. Then the change to a will propagate to the right of the computation graph so that J ends up being 33.003. And so the increase to J is 3 times the increase to a. So that means this derivative is equal to 3. And one way to break this down is to say that if you change a, then that will change v
+ 
+ So dv/da = 1. So in fact, if you plug in what we have wrapped up previously, dv/dJ = 3 and dv/da = 1. So the product of these 3 times 1, that actually gives you the correct value that dJ/da = 3
+ 
+![](https://imgur.com/DMlLBhk.png)
