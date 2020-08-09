@@ -93,7 +93,8 @@ the cost function for entire training set
 
 We want to find w, b that minimize J(w,b) 
 We step in, on each iteration find the parameters to minimise the cost function.
- 
+
+![](https://imgur.com/L3y4LCP.png) 
 
 dw will be used to represent this derivative term. w get updated and represented as 
 <img src="https://i.upmath.me/svg/w%3A%3D%20w%20-%5Calpha%20%5C%20%7B%20%5Cpartial%20T(w%2Cb)%20%5Cover%20%5Cpartial(w)%7D" alt="w:= w -\alpha \ { \partial T(w,b) \over \partial(w)}" /> 
