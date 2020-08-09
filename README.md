@@ -4,6 +4,7 @@
 [Supervised learning with Neural Network](#s)   
 [Why is Deep Learning taking off?](#d)   
 [Logistic regression on Deep learning](#l)
+[Gradient Descent](#g)
 
 <a name="h"/>
 
@@ -75,5 +76,28 @@ loss error function: this will measure the how good the <img src="https://i.upma
 
 ![](https://imgur.com/jGQFJSE.png)
 
+<a name="g"/>
+
+## Gradient Descent
+
+The loss function measures how well the you’re doing the training, also measure how well the parameter w and b doing in the entire training set. 
+
+
+<img src="https://i.upmath.me/svg/%5Chat%7By%7D%3D%20%5Csigma%20(%7BW%5ETx%20%2B%20b%7D)%2C%20%5C%20%20%5Csigma(z)%20%3D%20%7B1%20%5Cover%201%20%2B%20e%5E-%5Ez%7D%20" alt="\hat{y}= \sigma ({W^Tx + b}), \  \sigma(z) = {1 \over 1 + e^-^z} " />
+
+the cost function for entire training set 
+
+![](https://imgur.com/04pvAgW.png)
+
+<img src="https://i.upmath.me/svg/J(W%2Cb)%3D%20-%7B1%20%5Cover%20m%20%7D%20%5Csum_%7Bn%3Di%7D%5E%7Bm%7D%20%7B%5By%5Ei%5Clog%5Chat%7By%7D%5Ei%7D%20%2B%20(1-y%5Ei)log(1-%5Chat%7By%7D%5Ei)%5D%20" alt="J(W,b)= -{1 \over m } \sum_{n=i}^{m} {[y^i\log\hat{y}^i} + (1-y^i)log(1-\hat{y}^i)] " />
+
+We want to find w, b that minimize J(w,b) 
+We step in, on each iteration find the parameters to minimise the cost function.
+ 
+
+dw will be used to represent this derivative term. w get updated and represented as <img src="https://i.upmath.me/svg/%3A%3D%20w%20-%5Calpha%20%5C%20%7B%5CpartialT(w%2Cb)%20%5Cover%20%5Cpartial(w)%7D" alt=":= w -\alpha \ {\partialT(w,b) \over \partial(w)}" />. definition of a derivative is the slope of a function at the point. So the slope of the function is really the height divided by the width. so in logistic regression we updating w as w minus the learning rate times the derivative of J(w,b) respect to w
+you update b as b minus the learning rate times the derivative of the cost function in respect to b
+
+<img src="https://i.upmath.me/svg/%3A%3D%20b%20-%5Calpha%20%5C%20%7B%5CpartialT(w%2Cb)%20%5Cover%20%5Cpartial(b)%7D" alt=":= b -\alpha \ {\partialT(w,b) \over \partial(b)}" />
 
 
