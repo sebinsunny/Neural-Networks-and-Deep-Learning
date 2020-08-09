@@ -65,11 +65,17 @@ Parameters: <img src="https://i.upmath.me/svg/%20w%20%5C%20%5Cvarepsilon%20%20%5
 
 Output <img src="https://i.upmath.me/svg/%5Chat%7By%7D%3D%20%5Csigma%20(%7BW%5ETx%20%2B%20b%7D)%20%2F%20%5Csigma" alt="\hat{y}= \sigma ({W^Tx + b}) / \sigma" /> is a sigmoid function
 
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
+
+### Logistic Regression cost function
+
+loss error function: this will measure the how good the <img src="https://i.upmath.me/svg/%5Chat%7By%7D" alt="\hat{y}" />
+ is when true label is y. square error is not a reasonable choice because it will make the gradient descent not work well. 
 
 
+<img src="https://render.githubusercontent.com/render/math?math=L(\hat{y},y) = -(y\log \hat{y} %2B (1-y)\log(1-\hat{y})">
 
-
-
+![](https://imgur.com/jGQFJSE.png)
 
 
 
