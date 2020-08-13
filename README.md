@@ -122,3 +122,6 @@ Derivatives are defined with an even smaller value of how much you nudge a to th
  So dv/da = 1. So in fact, if you plug in what we have wrapped up previously, dv/dJ = 3 and dv/da = 1. So the product of these 3 times 1, that actually gives you the correct value that dJ/da = 3
  
 ![](https://imgur.com/DMlLBhk.png)
+
+Derivation of gradient descent
+![](https://imgur.com/jUhJw4l.png)
