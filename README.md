@@ -125,3 +125,7 @@ Derivatives are defined with an even smaller value of how much you nudge a to th
 
 Derivation of gradient descent
 ![](https://imgur.com/jUhJw4l.png)
+
+
+ A vectorize implementation of the four propagation for all M training examples at the same time. So to summarize, you've just seen how you can use vectorization to very efficiently compute all of the activations, all the lowercase A's at the same time
+![](https://imgur.com/xYJepGu.png)
