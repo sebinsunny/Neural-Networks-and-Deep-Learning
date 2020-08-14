@@ -132,3 +132,6 @@ Derivation of gradient descent
 
 Vectorization of backward propagation
 ![](https://imgur.com/11a6dAu.png)
+
+Common python practise 
+![](https://imgur.com/TBEYlNd.png)
