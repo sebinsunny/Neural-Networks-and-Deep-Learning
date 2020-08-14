@@ -129,3 +129,6 @@ Derivation of gradient descent
 
  A vectorize implementation of the four propagation for all M training examples at the same time. So to summarize, you've just seen how you can use vectorization to very efficiently compute all of the activations, all the lowercase A's at the same time
 ![](https://imgur.com/xYJepGu.png)
+
+Vectorization of backward propagation
+![](https://imgur.com/11a6dAu.png)
