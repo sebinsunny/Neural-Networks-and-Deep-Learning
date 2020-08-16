@@ -138,6 +138,17 @@ Common python practise
 
 Implementation of cost function and gradient using python
 ```python
+
+def sigmoid(z):
+    """Compute the sigmoid of z
+    Arguments:
+    z -- A scalar or numpy array of any size.
+    Return:
+    s -- sigmoid(z)
+    """
+    s = 1/(1+np.exp(-(z)))   
+    return s
+
 def propagate(w, b, X, Y):
     """Implement the cost function and its gradient for the propagation explained above
    Arguments:
