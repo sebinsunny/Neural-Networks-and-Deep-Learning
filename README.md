@@ -5,6 +5,7 @@
 [Why is Deep Learning taking off?](#d)   
 [Logistic regression on Deep learning](#l)   
 [Gradient Descent](#g)
+[Activation function](#a)
 
 <a name="h"/>
 
@@ -192,6 +193,8 @@ Vectorization of neural network with multiple network
 We stack all the activation function and the Z for the m network, A[i] is the contains the value of activation function for m training examples, horizontal axis indicate the hidden units and vertical axis is the activation function for the training examples 
 
 ![](https://imgur.com/JgtoEaj.png)
+
+<a name="d"/>
 
 # Activation functions in neural network
 ![](https://imgur.com/VhpZqDg.png)
