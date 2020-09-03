@@ -4,7 +4,7 @@
 [Supervised learning with Neural Network](#s)   
 [Why is Deep Learning taking off?](#d)   
 [Logistic regression on Deep learning](#l)   
-[Gradient Descent](#g)
+[Gradient Descent](#g)  
 [Activation function](#a)
 
 <a name="h"/>
