@@ -184,3 +184,32 @@ def propagate(w, b, X, Y):
     
     return grads, cost
 ```
+
+Vectorization of neural network with multiple network
+
+![](https://imgur.com/uwSEEL1.png)
+
+We stack all the activation function and the Z for the m network, A[i] is the contains the value of activation function for m training examples, horizontal axis indicate the hidden units and vertical axis is the activation function for the training examples 
+
+![](https://imgur.com/JgtoEaj.png)
+
+# Activation functions in neural network
+![](https://imgur.com/VhpZqDg.png)
+## Sigmoid 
+* it can be used in the output layer for binary classification problems 
+* one of the disadvantage of the sigmoid activation is when z is either larger or small then the gradient or derivation or slope of the function become small, close to zero
+## tanh
+* tanh function goes between +1 to -1, the mean of the activation of hidden layer closer have zero mean, the effect of centering data, helps learning for the next layer easier 
+* tanh have the same issues related to the sigmoid activation function. 
+
+## ReLU activation function
+* it is the a = max(0,z), default choice for activation function ]
+* advantage is a lot of the space of Z the derivative of the activation function or slope of the activation function is very different from 0, using ReLU the neural network learn much faster. 
+* disadvantage of the ReLU is derivative is equal to zero when z is negative, in practise it's fine
+
+## leakly ReLU activation function
+* a = max(0.01z,z)
+
+
+
+
