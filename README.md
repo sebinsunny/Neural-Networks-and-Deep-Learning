@@ -225,5 +225,15 @@ if we initialize zeros as the weights of the hidden layers so the activation fun
 * np.random.randn(2,2)*0.01
 * if w is so large it will cause the activation function to be saturated. 
 
+<a name="l"/>
 
+# Deep Neural Network
 
+![](https://imgur.com/3DTfAHM.png)
+
+## Dimension of the deep Neural network
+
+W = dimension of the layer n(l),n(l-1)
+b = (n(l),1)
+![](https://imgur.com/ZBh8lj2.png)
+![](https://imgur.com/PCdktCQ.png)
