@@ -206,13 +206,24 @@ We stack all the activation function and the Z for the m network, A[i] is the co
 * tanh have the same issues related to the sigmoid activation function. 
 
 ## ReLU activation function
-* it is the a = max(0,z), default choice for activation function ]
+* it is the a = max(0,z), default choice for activation function
 * advantage is a lot of the space of Z the derivative of the activation function or slope of the activation function is very different from 0, using ReLU the neural network learn much faster. 
 * disadvantage of the ReLU is derivative is equal to zero when z is negative, in practise it's fine
 
 ## leakly ReLU activation function
 * a = max(0.01z,z)
 
+# Derivatives of activation functions
+
+* sigmoid function, the slope of the function = d/dt(g(z)) = g(z)(1-g(z))
+
+what is symmetric breaking problem
+![](https://imgur.com/eKsL6m8.png)
+
+if we initialize zeros as the weights of the hidden layers so the activation function will be equal and then we compute backpropagation that will be identical. the hidden unit computes the same values then the two hidden units are symmetric called symmetric breaking problem.
+* the solution to the problem is initialize the parameters randomly, the b doesn't have the symmetry breaking problem can initialize to zero
+* np.random.randn(2,2)*0.01
+* if w is so large it will cause the activation function to be saturated. 
 
 
 
