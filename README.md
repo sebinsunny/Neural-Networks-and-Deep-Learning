@@ -5,7 +5,10 @@
 [Why is Deep Learning taking off?](#d)   
 [Logistic regression on Deep learning](#l)   
 [Gradient Descent](#g)  
-[Activation function](#a)
+[Activation function](#a)   
+[Deep Neural Network](#l)  
+[Formulas](#for)
+
 
 <a name="h"/>
 
@@ -237,3 +240,8 @@ W = dimension of the layer n(l),n(l-1)
 b = (n(l),1)
 ![](https://imgur.com/ZBh8lj2.png)
 ![](https://imgur.com/PCdktCQ.png)
+
+<a name="for"/>
+
+# Important formulas
+![](https://imgur.com/XSro0dN.png)
